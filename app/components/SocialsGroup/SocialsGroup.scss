@@ -54,4 +54,50 @@
       border-color: #e1306c;
     }
   }
+
+  // Tablet responsive
+  @media (max-width: 1200px) {
+    gap: 0.75rem;
+    
+    .social-card {
+      width: 60px;
+      height: 60px;
+      
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  // Mobile responsive
+  @media (max-width: 768px) {
+    gap: 1rem;
+    justify-content: center;
+    
+    .social-card {
+      width: 70px;
+      height: 70px;
+      
+      svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+
+  // Small mobile
+  @media (max-width: 480px) {
+    gap: 0.5rem;
+    
+    .social-card {
+      width: 60px;
+      height: 60px;
+      
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
 }

@@ -1,14 +1,21 @@
 'use client';
 
+import { useState } from 'react';
 import Card from '../Card/Card';
 import './ContactCard.scss';
-import {Copy}from 'lucide-react'
-
+import { Copy } from 'lucide-react';
 
 export default function ContactCard({className}) {
+  const [showToast, setShowToast] = useState(false);
+
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText('john.doe@example.com');
-    alert('Email copied to clipboard!');
+    navigator.clipboard.writeText('mercyaksss625@gmail.com');
+    setShowToast(true);
+    
+    // Hide toast after 3 seconds
+    setTimeout(() => {
+      setShowToast(false);
+    }, 3000);
   };
 
   return (
@@ -23,8 +30,16 @@ export default function ContactCard({className}) {
           onClick={handleCopyEmail}
         >
           Copy email
-          <Copy/>
+          <Copy size={16} />
         </button>
+
+        {/* Toast notification */}
+        {showToast && (
+          <div className="toast">
+            <Copy size={16} />
+            <span>Email copied to clipboard!</span>
+          </div>
+        )}
       </div>
     </Card>
   );
