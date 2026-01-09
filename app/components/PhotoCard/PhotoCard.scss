@@ -1,0 +1,14 @@
+.photo-card {
+  padding: 0 !important; // Remove card padding
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // This makes the image fill the container while maintaining aspect ratio
+    object-position: center; // Center the image
+  }
+}

@@ -1,0 +1,74 @@
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+
+  h2 {
+    margin: 0;
+    color: var(--primary);
+    font-size: 1.2rem;
+  }
+
+  .tech-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    flex: 1;
+
+    .tech-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+
+      svg {
+        color: rgba(255, 255, 255, 0.5);
+        transition: color 0.3s ease;
+      }
+
+      // JavaScript - Yellow
+      &.javascript svg {
+        color: #F7DF1E;
+      }
+
+      // React - Cyan/Blue
+      &.react svg {
+        color: #61DAFB;
+      }
+
+      // Next.js - White
+      &.nextjs svg {
+        color: #FFFFFF;
+      }
+
+      // SCSS - Pink
+      &.scss svg {
+        color: #CC6699;
+      }
+
+      // Git - Orange/Red
+      &.git svg {
+        color: #F05032;
+      }
+
+      &:hover svg {
+        filter: brightness(1.2);
+      }
+
+      .tech-name {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        font-weight: 500;
+      }
+    }
+  }
+}

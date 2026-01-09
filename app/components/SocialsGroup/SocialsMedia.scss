@@ -1,0 +1,38 @@
+.socials-Media {  // Wrapper for single card
+  .social-card {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    transition: all 0.3s ease;
+    text-decoration: none;  // For the <a>
+
+
+    img {
+      width: 32px;
+      height: 32px;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+
+      img {
+        opacity: 1;
+      }
+    }
+
+    // Brand tints on hover
+    &.github:hover { border-color: #333; }
+    &.linkedin:hover { border-color: #0077b5; }
+    &.twitter:hover { border-color: #1da1f2; }
+    &.email:hover { border-color: var(--primary); }
+    &.instagram:hover { border-color: #e4405f; }
+  }
+}
