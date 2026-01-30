@@ -1,0 +1,91 @@
+import React from 'react'
+import enve from '../assets/enver.png'
+import themeswitcher from '../assets/themeswitcher.png'
+import news from '../assets/newshomepage.png'
+import grid from '../assets/grid.png'
+import Link from 'next/link'
+import Image from 'next/image'
+import './page.scss'
+
+function page() {
+  const projects = [
+    {
+      name: "Enver", 
+      description: "A fully responsive web application built from a Figma design. Translated visual design into clean, modern code focusing on pixel-perfect implementation, responsive layout, and usability.", 
+      github: 'https://github.com/Mercyaksss/Enver', 
+      livelink: "https://enver-pied.vercel.app/", 
+      image: enve,
+      tech: ["React", "Next.js", "SCSS"]
+    },
+    {
+      name: "Theme Switcher", 
+      description: "A web application allowing users to seamlessly switch between teams and workspaces. Built with smooth state management, responsive design, and intuitive user interactions.", 
+      github: 'https://github.com/Mercyaksss/theme-switcher', 
+      livelink: "https://theme-switcher-lyart.vercel.app/", 
+      image: themeswitcher,
+      tech: ["React", "Next.js", "SCSS"]
+    },
+    {
+      name: "Grid Testimonial", 
+      description: "A responsive testimonials section built using modern CSS grid layout. Focused on creating a clean, balanced design that adapts smoothly across different screen sizes.", 
+      github: 'https://github.com/Mercyaksss/grid-testimonials', 
+      livelink: "https://grid-testimonials-tau.vercel.app/", 
+      image: grid,
+      tech: ["HTML", "CSS Grid", "Responsive"]
+    },
+    {
+      name: "News Homepage", 
+      description: "A responsive testimonials section built using modern CSS grid layout. Focused on creating a clean, balanced design that adapts smoothly across different screen sizes.", 
+      github: 'https://github.com/Mercyaksss/news-homepage', 
+      livelink: "https://news-homepage-alpha-sooty.vercel.app/", 
+      image: news,
+      tech: ["HTML", "CSS Grid", "Responsive"]
+    }
+  ]
+
+  return (
+    <div className='projects-container'>
+      <div className='projects-header'>
+        <h1>_Projects</h1>
+        <p>A selection of things I've built</p>
+      </div>
+
+      <div className='project-grid'>
+        {projects.map((project, index) => (
+          <div key={index} className={`project-card card-${index + 1}`}> 
+            <div className='project-image'>
+              <Image 
+                src={project.image} 
+                alt={project.name}
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+            
+            <div className='project-content'>
+              <h2>{project.name}</h2>
+              <p className='project-description'>{project.description}</p>
+              
+              <div className='project-tech'>
+                {project.tech.map((tech, i) => (
+                  <span key={i} className='tech-tag'>{tech}</span>
+                ))}
+              </div>
+              
+              <div className='project-links'>
+                <Link href={project.github} target="_blank" rel="noopener noreferrer">
+                  <button className='btn-secondary'>GitHub</button>
+                </Link>
+                <Link href={project.livelink} target="_blank" rel="noopener noreferrer">
+                  <button className='btn-primary'>Live Demo</button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default page

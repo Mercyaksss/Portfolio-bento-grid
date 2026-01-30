@@ -1,5 +1,5 @@
+import Link from 'next/link';
 import Card from '../Card/Card';
-import ProjectItem from './ProjectItem';
 import './ProjectsCard.scss';
 import { ArrowUpRight } from 'lucide-react';
 
@@ -9,9 +9,12 @@ export default function ProjectsCard({className}) {
       <h2>_Featured Projects</h2>
       <div className='view'>
         <p>View Projects</p>
-        <p>
-          <ArrowUpRight/>
-        </p>
+        <Link href='/Projects'>
+          <p>
+            <ArrowUpRight/>
+          </p>
+        </Link>
+
       </div>
       
     </Card>
