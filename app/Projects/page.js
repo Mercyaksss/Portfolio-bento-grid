@@ -2,7 +2,9 @@ import React from 'react'
 import enve from '../assets/enver.png'
 import themeswitcher from '../assets/themeswitcher.png'
 import news from '../assets/newshomepage.png'
-import grid from '../assets/grid.png'
+import grid from '../assets/space.png'
+import salespage from '../assets/salespage.png'
+import fylo from '../assets/Fylo.png'
 import Link from 'next/link'
 import Image from 'next/image'
 import './page.scss'
@@ -18,20 +20,28 @@ function page() {
       tech: ["React", "Next.js", "SCSS"]
     },
     {
-      name: "Theme Switcher", 
-      description: "A web application allowing users to seamlessly switch between teams and workspaces. Built with smooth state management, responsive design, and intuitive user interactions.", 
-      github: 'https://github.com/Mercyaksss/theme-switcher', 
-      livelink: "https://theme-switcher-lyart.vercel.app/", 
-      image: themeswitcher,
-      tech: ["React", "Next.js", "SCSS"]
+      name: "Fylo", 
+      description: "A responsive testimonials section built using modern CSS grid layout. Focused on creating a clean, balanced design that adapts smoothly across different screen sizes.", 
+      github: 'https://github.com/Mercyaksss/fylo', 
+      livelink: "https://fylo-chi-ruby.vercel.app/", 
+      image: fylo,
+      tech: ["TypeScript", "SCSS", "Framer Motion"]
     },
     {
-      name: "Grid Testimonial", 
+      name: "Theme Switcher", 
+      description: "A web application allowing users to seamlessly switch between teams and workspaces. Built with smooth state management, responsive design, and intuitive user interactions.", 
+      github: 'https://github.com/Mercyaksss/theme_switcher', 
+      livelink: "https://theme-switcher-lyart.vercel.app/", 
+      image: themeswitcher,
+      tech: ["React", "CSS", "Responsive"]
+    },
+    {
+      name: "Space Tourism", 
       description: "A responsive testimonials section built using modern CSS grid layout. Focused on creating a clean, balanced design that adapts smoothly across different screen sizes.", 
-      github: 'https://github.com/Mercyaksss/grid-testimonials', 
-      livelink: "https://grid-testimonials-tau.vercel.app/", 
+      github: 'https://github.com/Mercyaksss/Space-Tourism', 
+      livelink: "https://space-tourism-mu-ten.vercel.app/", 
       image: grid,
-      tech: ["HTML", "CSS Grid", "Responsive"]
+      tech: ["Vite", "React", "SCSS"]
     },
     {
       name: "News Homepage", 
@@ -39,8 +49,17 @@ function page() {
       github: 'https://github.com/Mercyaksss/news-homepage', 
       livelink: "https://news-homepage-alpha-sooty.vercel.app/", 
       image: news,
-      tech: ["HTML", "CSS Grid", "Responsive"]
-    }
+      tech: ["Vite", "React", "SCSS"]
+    },
+    {
+      name: "Digital guide Salespage", 
+      description: "A responsive testimonials section built using modern CSS grid layout. Focused on creating a clean, balanced design that adapts smoothly across different screen sizes.", 
+      github: 'https://github.com/Mercyaksss/news-homepage', 
+      livelink: "https://news-homepage-alpha-sooty.vercel.app/", 
+      image: salespage,
+      tech: ["React", "SCSS", "Responsive"]
+    },
+    
   ]
 
   return (

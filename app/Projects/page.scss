@@ -23,7 +23,7 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1.5rem;
   
@@ -41,23 +41,6 @@
       border-color: var(--primary);
       transform: translateY(-4px);
       box-shadow: 0 8px 24px rgba(175, 99, 66, 0.1);
-    }
-    
-    // Bento grid layout - different sizes for visual interest
-    &.card-1 {
-      grid-column: span 4;
-    }
-    
-    &.card-2 {
-      grid-column: span 4;
-    }
-    
-    &.card-3 {
-      grid-column: span 4;
-    }
-
-    &.card-4 {
-      grid-column: span 4;
     }
   }
   
@@ -156,22 +139,10 @@
   }
 }
 
-// Responsive design
-@media (max-width: 1024px) {
-  .project-grid {
-    grid-template-columns: repeat(6, 1fr);
-    
-    .project-card {
-      &.card-1,
-      &.card-2 {
-        grid-column: span 6;
-      }
-      
-      &.card-3 {
-        grid-column: span 6;
-      }
+@media (max-width: 1115px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-  }
 }
 
 @media (max-width: 768px) {
