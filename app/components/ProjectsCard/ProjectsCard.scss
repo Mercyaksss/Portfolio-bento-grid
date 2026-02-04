@@ -6,4 +6,17 @@
         justify-content: space-between;
         font-weight: 200;
     }
+
+    .project-images{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        // grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+
+        img{
+            border-radius: 100%;
+            // margin: 1px 0;
+            object-fit: scale-down;
+        }
+    }
 }

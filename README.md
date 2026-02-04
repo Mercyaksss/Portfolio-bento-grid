@@ -1,37 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js featuring a unique bento grid layout. Showcases my frontend development projects and skills.
 
-First, run the development server:
+![Portfolio Preview](./app/assets/portfolio.png)
 
+## 🌐 Live Demo
+
+**[View Live Portfolio](https://portfolio-bento-grid-ten.vercel.app/)**
+
+## ✨ Features
+
+- **Bento Grid Layout** - Modern, card-based design inspired by iOS widgets
+- **Fully Responsive** - Optimized layouts for desktop, tablet, and mobile devices
+- **Projects Showcase** - Dedicated page displaying detailed project information
+- **Dark Theme** - Sleek dark mode design with custom color scheme
+- **Smooth Animations** - Hover effects and transitions for enhanced UX
+- **Performance Optimized** - Built with Next.js for fast loading and SEO
+
+## 🛠️ Built With
+
+- **[Next.js 14](https://nextjs.org/)** - React framework for production
+- **[React 18](https://react.dev/)** - JavaScript library for building UI
+- **[SCSS](https://sass-lang.com/)** - CSS preprocessor for advanced styling
+- **[Vercel](https://vercel.com/)** - Deployment and hosting platform
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or higher
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/Mercyaksss/portfolio-bento-grid.git
+cd portfolio-bento-grid
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🎨 Key Components
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **HeroCard** - Introduction and main heading
+- **PhotoCard** - Profile image display
+- **ProjectsCard** - Quick access to projects page
+- **TechStackCard** - Display of technical skills and technologies
+- **AboutCard** - Personal introduction and background
+- **ContactCard** - Email contact information
+- **SocialsGroup** - Social media links
+- **CurrentlyCard** - Current status and availability
 
-## Learn More
+## 📱 Responsive Design
 
-To learn more about Next.js, take a look at the following resources:
+The portfolio features three responsive breakpoints:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Desktop** (1200px+) - Full bento grid layout
+- **Tablet** (768px - 1200px) - Adjusted grid with 3 columns
+- **Mobile** (<768px) - Single column stacked layout
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚧 Future Improvements
 
-## Deploy on Vercel
+- [ ] Add blog section
+- [ ] Implement dark/light mode toggle
+- [ ] Add project filtering by technology
+- [ ] Include case studies for major projects
+- [ ] Add animations library (Framer Motion)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# Portfolio-bento-grid" 
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👤 Contact
+
+**Mercy Yakubu**
+
+- Portfolio: [portfolio-bento-grid-ten.vercel.app](https://portfolio-bento-grid-ten.vercel.app/)
+- GitHub: [@Mercyaksss](https://github.com/Mercyaksss)
+- Email: mercyaksss625@gmail.com
+
+---
+
+⭐ If you like this project, please consider giving it a star on GitHub!

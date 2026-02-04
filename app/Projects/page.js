@@ -21,7 +21,7 @@ function page() {
     },
     {
       name: "Fylo", 
-      description: "A responsive testimonials section built using modern CSS grid layout. Focused on creating a clean, balanced design that adapts smoothly across different screen sizes.", 
+      description: "A fully responsive landing page built from a Frontend Mentor challenge. Enhanced the original design with smooth animations and engaging interactions to bring the interface to life.", 
       github: 'https://github.com/Mercyaksss/fylo', 
       livelink: "https://fylo-chi-ruby.vercel.app/", 
       image: fylo,
@@ -37,7 +37,7 @@ function page() {
     },
     {
       name: "Space Tourism", 
-      description: "A responsive testimonials section built using modern CSS grid layout. Focused on creating a clean, balanced design that adapts smoothly across different screen sizes.", 
+      description: "A multi-page space tourism site featuring dynamic routing and interactive content sections. Focused on creating an immersive experience with polished UI and smooth navigation.", 
       github: 'https://github.com/Mercyaksss/Space-Tourism', 
       livelink: "https://space-tourism-mu-ten.vercel.app/", 
       image: grid,
@@ -45,7 +45,7 @@ function page() {
     },
     {
       name: "News Homepage", 
-      description: "A responsive testimonials section built using modern CSS grid layout. Focused on creating a clean, balanced design that adapts smoothly across different screen sizes.", 
+      description: "A modern news homepage featuring a complex CSS Grid layout with multiple content sections. Built with a focus on responsive design, visual hierarchy, and creating an organized reading experience.", 
       github: 'https://github.com/Mercyaksss/news-homepage', 
       livelink: "https://news-homepage-alpha-sooty.vercel.app/", 
       image: news,
@@ -53,11 +53,11 @@ function page() {
     },
     {
       name: "Digital guide Salespage", 
-      description: "A responsive testimonials section built using modern CSS grid layout. Focused on creating a clean, balanced design that adapts smoothly across different screen sizes.", 
-      github: 'https://github.com/Mercyaksss/news-homepage', 
-      livelink: "https://news-homepage-alpha-sooty.vercel.app/", 
+      description: "A sales landing page built for my digital marketing guide. Designed and developed with conversion in mind, featuring strategic layout, persuasive copy flow, and clear CTAs to drive purchases.", 
+      github: 'https://github.com/Mercyaksss/Digital-marketing-salespage', 
+      livelink: "https://digital-marketing-salespage.vercel.app/", 
       image: salespage,
-      tech: ["React", "SCSS", "Responsive"]
+      tech: ["HTML", "CSS", "Responsive"]
     },
     
   ]
