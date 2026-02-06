@@ -3,6 +3,9 @@ import './globals.scss';
 export const metadata = {
   title: 'Mercy Yakubu | Frontend Developer',
   description: 'Professional frontend developer portfolio',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -5,6 +5,8 @@ import news from '../assets/newshomepage.png'
 import grid from '../assets/space.png'
 import salespage from '../assets/salespage.png'
 import fylo from '../assets/Fylo.png'
+import shoestore from '../assets/shoestore.png'
+import restapi from '../assets/restapi.png'
 import Link from 'next/link'
 import Image from 'next/image'
 import './page.scss'
@@ -12,12 +14,12 @@ import './page.scss'
 function page() {
   const projects = [
     {
-      name: "Enver", 
-      description: "A fully responsive web application built from a Figma design. Translated visual design into clean, modern code focusing on pixel-perfect implementation, responsive layout, and usability.", 
-      github: 'https://github.com/Mercyaksss/Enver', 
-      livelink: "https://enver-pied.vercel.app/", 
-      image: enve,
-      tech: ["React", "Next.js", "SCSS"]
+      name: "Digital guide Salespage", 
+      description: "A sales landing page built for my digital marketing guide. Designed and developed with conversion in mind, featuring strategic layout, persuasive copy flow, and clear CTAs to drive purchases.", 
+      github: 'https://github.com/Mercyaksss/Digital-marketing-salespage', 
+      livelink: "https://digital-marketing-salespage.vercel.app/", 
+      image: salespage,
+      tech: ["HTML", "CSS", "Responsive"]
     },
     {
       name: "Fylo", 
@@ -26,6 +28,30 @@ function page() {
       livelink: "https://fylo-chi-ruby.vercel.app/", 
       image: fylo,
       tech: ["TypeScript", "SCSS", "Framer Motion"]
+    },
+    {
+      name: "Shoe Store REST API", 
+      description: "A RESTful API built with Node.js and Express.js that serves product data for an e-commerce shoe store. Features multiple endpoints with filtering capabilities by brand, category, gender, and price range.", 
+      github: 'https://github.com/Mercyaksss/shoe-store-api', 
+      livelink: "https://shoe-store-api-dei7.onrender.com/api/shoes", 
+      image: restapi,
+      tech: ["Node.js", "Express.js", "REST API"]
+    },
+    {
+      name: "Shoe Store", 
+      description: "A RESTful API built with Node.js and Express.js that serves product data for an e-commerce shoe store. Features multiple endpoints with filtering capabilities by brand, category, gender, and price range.", 
+      github: 'https://github.com/Mercyaksss/SOLE---E-commerce-Shoe-Store', 
+      livelink: "https://sole-e-commerce-shoe-store.vercel.app/", 
+      image: shoestore,
+      tech: ["Next.js", "Tailwind CSS", "REST API"]
+    },
+    {
+      name: "Enver", 
+      description: "A fully responsive web application built from a Figma design. Translated visual design into clean, modern code focusing on pixel-perfect implementation, responsive layout, and usability.", 
+      github: 'https://github.com/Mercyaksss/Enver', 
+      livelink: "https://enver-pied.vercel.app/", 
+      image: enve,
+      tech: ["React", "Next.js", "SCSS"]
     },
     {
       name: "Theme Switcher", 
@@ -51,14 +77,7 @@ function page() {
       image: news,
       tech: ["Vite", "React", "SCSS"]
     },
-    {
-      name: "Digital guide Salespage", 
-      description: "A sales landing page built for my digital marketing guide. Designed and developed with conversion in mind, featuring strategic layout, persuasive copy flow, and clear CTAs to drive purchases.", 
-      github: 'https://github.com/Mercyaksss/Digital-marketing-salespage', 
-      livelink: "https://digital-marketing-salespage.vercel.app/", 
-      image: salespage,
-      tech: ["HTML", "CSS", "Responsive"]
-    },
+
     
   ]
 
